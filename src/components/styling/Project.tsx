@@ -8,7 +8,7 @@ import img3 from "../../assets/ss3.png";
 export const dataProject = [
   {
     title: "ViteStore",
-    link: "",
+    link: "http://203.194.114.22:3002/",
     Icon: [FaReact, SiTailwindcss],
     src: img3,
   },
