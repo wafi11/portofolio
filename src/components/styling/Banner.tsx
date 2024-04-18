@@ -8,8 +8,8 @@ import profile from "../../assets/wafi (1).png";
 const Banner = () => {
   const kata = ["Web Developer", "Web Designer"];
   return (
-    <div className="h-[800px] mx-auto px-4 py-8  lg:py-40 relative  items-center">
-      <div className="container flex flex-col-reverse gap-20 lg:flex-row justify-between py-20 items-center">
+    <div className="min-h-[550px] mx-auto px-4 py-12 relative  items-center">
+      <div className="container flex flex-col-reverse gap-20 lg:flex-row justify-between pt-10 items-center">
         <div className="justify-center items-center grid w-[600px]">
           <motion.h1
             initial={{ opacity: 0.5, y: 100 }}

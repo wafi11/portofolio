@@ -36,13 +36,13 @@ export const Project = () => {
         <p className="text-xl text-gray-400">
           It is a project that I have worked on and learned.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 lg:gap-10  items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-3 items-center">
           {dataProject.map((item) => (
             <CardContainer className="inter-var" key={item.title}>
               <CardBody
                 className="bg-slate-700  relative group/card  group dark:hover:shadow-2xl
                  hover:shadow-emerald-500/[0.1] dark:bg-black h-auto 
-            w-auto sm:w-[30rem] rounded-xl p-6  hover:ring-2 ring-[#0284c7] hover:bg-[#0284c7]">
+             rounded-xl p-6  hover:ring-2 ring-[#0284c7] hover:bg-[#0284c7]">
                 <a href={item.link}>
                   <img
                     src={item.src}
