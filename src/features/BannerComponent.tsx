@@ -1,8 +1,7 @@
 import { SectionContainer } from "@/components/layouts/SectionContainer";
 import { Button } from "@/components/ui/button";
 import { URL_GITHUB, URL_LINKEDIN } from "@/contants";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
+import { ArrowRight, Github, Mail, Linkedin } from "lucide-react";
 
 export function BannerComponent() {
   return (
@@ -58,10 +57,10 @@ export function BannerComponent() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-4">
             <Button size="lg" asChild className="group rounded-none">
-              <Link href="#projects">
+              <a href="#projects">
                 View Projects
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
             </Button>
             <Button
               size="lg"
@@ -69,26 +68,26 @@ export function BannerComponent() {
               asChild
               className="rounded-none "
             >
-              <Link href="#contact">
+              <a href="#contact">
                 <Mail className="mr-2 h-4 w-4" />
                 Contact Me
-              </Link>
+              </a>
             </Button>
           </div>
 
-          {/* Social Links */}
+          {/* Social as */}
           <div className="flex items-center gap-4 pt-4">
             <span className="text-sm text-muted-foreground">Connect:</span>
             <div className="flex gap-2">
               <Button size="icon" variant="ghost" asChild>
-                <Link href={URL_GITHUB}>
+                <a href={URL_GITHUB}>
                   <Github className="h-5 w-5" />
-                </Link>
+                </a>
               </Button>
               <Button size="icon" variant="ghost" asChild>
-                <Link href={URL_LINKEDIN}>
+                <a href={URL_LINKEDIN}>
                   <Linkedin className="h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

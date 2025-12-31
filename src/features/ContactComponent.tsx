@@ -82,22 +82,12 @@ export default function ContactComponent() {
 
   return (
     <SectionContainer
-      id="contacts"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 py-20"
+      id="contact"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4"
     >
       <TitleComponent text="Get In Touch" className="text-4xl lg:text-5xl" />
 
       <div className="w-full max-w-2xl">
-        {/* Contact Info */}
-        <div className="text-center mb-8">
-          <p className="text-muted-foreground mb-2">
-            Tertarik untuk berkolaborasi atau punya pertanyaan?
-          </p>
-          <p className="text-muted-foreground">
-            Silakan kirim pesan dan saya akan merespons secepatnya!
-          </p>
-        </div>
-
         {/* Form */}
         <div className="relative overflow-hidden rounded-xl border border-border/50 bg-card/30 backdrop-blur-sm p-8">
           {/* Background Gradient */}

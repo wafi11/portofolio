@@ -3,7 +3,6 @@ import { TitleComponent } from "@/components/layouts/TitleComponent";
 import { DataProjects } from "@/data/DataProjects";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 export function ProjectsComponent() {
   return (
@@ -19,7 +18,7 @@ export function ProjectsComponent() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
         {DataProjects.map((item, idx) => (
-          <Link
+          <a
             key={idx}
             href={item.link}
             target="_blank"
@@ -94,7 +93,7 @@ export function ProjectsComponent() {
                 </div>
               )}
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </SectionContainer>
