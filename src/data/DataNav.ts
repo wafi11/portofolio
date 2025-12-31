@@ -25,10 +25,3 @@ export const dataStats = [
   { icon: Code2, label: "Technologies", value: "15+" },
   { icon: Award, label: "Experience", value: "2+ Years" },
 ];
-
-export const dataProjects = [
-  {
-    name: "Udatopup",
-    link: "https://udatopup.com",
-  },
-];
